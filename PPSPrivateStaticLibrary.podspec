@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PPSPrivateStaticLibrary'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'This is ppsheep‘s test'
 
 # This description is used to generate tags and improve search results.
@@ -32,7 +32,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'PPSPrivateStaticLibrary/Classes/**/*'
-  s.ios.vendored_framework   = 'PPSPrivateStaticLibrary-0.1.0/ios/PPSPrivateStaticLibrary.framework'
+#  s.ios.vendored_framework   = 'PPSPrivateStaticLibrary-0.1.0/ios/PPSPrivateStaticLibrary.framework'
+  s.ios.vendored_framework   = '/ios/PPSPrivateStaticLibrary.framework'
   # s.resource_bundles = {
   #   'PPSPrivateStaticLibrary' => ['PPSPrivateStaticLibrary/Assets/*.png']
   # }
@@ -41,4 +42,5 @@ Pod::Spec.new do |s|
   s.public_header_files = 'PPSPrivateStaticLibrary/Classes/Public/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'Masonry', '~> 1.1.0'
 end
