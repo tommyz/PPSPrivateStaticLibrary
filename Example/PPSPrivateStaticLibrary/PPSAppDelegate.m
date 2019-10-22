@@ -7,12 +7,18 @@
 //
 
 #import "PPSAppDelegate.h"
+#import <PPSPrivateStaticLibrary/PPSPublic1.h>
+#import <PPSPrivateStaticLibrary/PPSPublic2.h>
 
 @implementation PPSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    PPSPublic1 *p1 = [[PPSPublic1 alloc] init];
+    [p1 public1];
+    PPSPublic2 *p2 = [[PPSPublic2 alloc] init];
+    [p2 public2];
     return YES;
 }
 

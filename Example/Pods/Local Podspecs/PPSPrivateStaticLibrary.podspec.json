@@ -1,0 +1,28 @@
+{
+  "name": "PPSPrivateStaticLibrary",
+  "version": "0.1.0",
+  "summary": "This is ppsheep‘s test",
+  "description": "这是我的一个测试工程，用来演示怎样创建一个源码不公开的静态库",
+  "homepage": "https://github.com/tommyz/PPSPrivateStaticLibrary",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "tommyz": "tommyz1981@gmail.com"
+  },
+  "source": {
+    "git": "/Users/tommy-mac/PPSPrivateStaticLibrary",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "PPSPrivateStaticLibrary/Classes/**/*",
+  "public_header_files": "PPSPrivateStaticLibrary/Classes/Public/*.h",
+  "dependencies": {
+    "AFNetworking": [
+      "~> 2.3"
+    ]
+  }
+}

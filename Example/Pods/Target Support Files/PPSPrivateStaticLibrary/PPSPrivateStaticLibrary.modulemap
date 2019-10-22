@@ -1,0 +1,6 @@
+framework module PPSPrivateStaticLibrary {
+  umbrella header "PPSPrivateStaticLibrary-umbrella.h"
+
+  export *
+  module * { export * }
+}

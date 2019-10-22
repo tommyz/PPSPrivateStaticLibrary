@@ -18,6 +18,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    UIImageView *imageView = [UIImageView new];
+    imageView.frame = self.view.bounds;
+    imageView.backgroundColor = [UIColor redColor];
+    [self.view addSubview:imageView];
 }
 
 - (void)didReceiveMemoryWarning

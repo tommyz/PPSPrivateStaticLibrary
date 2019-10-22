@@ -1,0 +1,6 @@
+framework module Pods_PPSPrivateStaticLibrary_Tests {
+  umbrella header "Pods-PPSPrivateStaticLibrary_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
