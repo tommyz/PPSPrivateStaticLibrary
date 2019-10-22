@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PPSPrivateStaticLibrary'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'This is ppsheep‘s test'
 
 # This description is used to generate tags and improve search results.
@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'PPSPrivateStaticLibrary/Classes/**/*'
-  s.ios.vendored_framework   = 'PPSPrivateStaticLibrary-0.1.3/ios/PPSPrivateStaticLibrary.framework'
+  s.ios.vendored_framework   = 'PPSPrivateStaticLibrary/PPSPrivateStaticLibrary.framework'
 #  s.ios.vendored_framework   = '/ios/PPSPrivateStaticLibrary.framework'
   # s.resource_bundles = {
   #   'PPSPrivateStaticLibrary' => ['PPSPrivateStaticLibrary/Assets/*.png']
