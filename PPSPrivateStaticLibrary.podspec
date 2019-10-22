@@ -32,7 +32,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'PPSPrivateStaticLibrary/Classes/**/*'
-  s.ios.vendored_framework   = 'PPSPrivateStaticLibrary/ios/PPSPrivateStaticLibrary.framework'
+#  s.ios.vendored_framework   = 'PPSPrivateStaticLibrary/ios/PPSPrivateStaticLibrary.framework'
+  s.ios.vendored_frameworks   = 'PPSPrivateStaticLibrary/ios/PPSPrivateStaticLibrary.framework'
 #  s.ios.vendored_framework   = '/ios/PPSPrivateStaticLibrary.framework'
   # s.resource_bundles = {
   #   'PPSPrivateStaticLibrary' => ['PPSPrivateStaticLibrary/Assets/*.png']
