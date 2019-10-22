@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PPSPrivateStaticLibrary'
-  s.version          = '0.1.5'
+  s.version          = '0.1.6'
   s.summary          = 'This is ppsheep‘s test'
 
 # This description is used to generate tags and improve search results.
@@ -25,16 +25,17 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'tommyz' => 'tommyz1981@gmail.com' }
-#  s.source           = { :git => '/Users/tommy-mac/PPSPrivateStaticLibrary', :tag => s.version.to_s }
-  s.source           = { :git => 'https://github.com/tommyz/PPSPrivateStaticLibrary.git', :tag => s.version.to_s }
+  s.source           = { :git => '/Users/tommy-mac/PPSPrivateStaticLibrary', :tag => s.version.to_s }
+#  s.source           = { :git => 'https://github.com/tommyz/PPSPrivateStaticLibrary.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'PPSPrivateStaticLibrary/Classes/**/*'
-#  s.ios.vendored_framework   = 'PPSPrivateStaticLibrary/ios/PPSPrivateStaticLibrary.framework'
-  s.ios.vendored_frameworks   = 'ios/PPSPrivateStaticLibrary.framework'
-#  s.ios.vendored_framework   = '/ios/PPSPrivateStaticLibrary.framework'
+#  s.static_framework = true
+#  s.ios.vendored_frameworks = 'PPSPrivateStaticLibrary.framework'
+  s.ios.vendored_frameworks = 'ios/PPSPrivateStaticLibrary.framework'
+
   # s.resource_bundles = {
   #   'PPSPrivateStaticLibrary' => ['PPSPrivateStaticLibrary/Assets/*.png']
   # }
@@ -42,6 +43,6 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.public_header_files = 'PPSPrivateStaticLibrary/Classes/Public/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'AFNetworking'
   s.dependency 'Masonry', '~> 1.1.0'
 end
